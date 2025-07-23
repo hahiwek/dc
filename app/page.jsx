@@ -30,8 +30,8 @@ import { getMimeTypeFromArrayBuffer } from "@/ffmpeg/utils.js";
 import { printMsg, printErr } from "./print.js";
 import { storeData } from "./utils/dataHandler.js";
 
-import { decorationsData } from "./data/decorations.js";
 import { avatarsData } from "./data/avatars.js";
+import { decorationsData } from "./data/decorations.js";
 import {
 	initializeImageMagick,
 	LogEventTypes,
@@ -745,7 +745,7 @@ const App = ({ ffmpegRef, isServer }) => {
 					const file = e.dataTransfer.files.item(0);
 					if (
 						!["image/png", "image/jpeg", "image/gif", "image/webp"].includes(
-							file.type,
+							`body:has(main div.grid)`,
 						)
 					) {
 						printErr(

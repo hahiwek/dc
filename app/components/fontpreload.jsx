@@ -27,12 +27,6 @@ export function FontPreloader() {
 							e
 						</p>
 					))}
-					<p className="ginto" style={{ fontSize: "1px" }}>
-						e
-					</p>
-					<p className="nitro-font" style={{ fontSize: "1px" }}>
-						e
-					</p>
 				</div>
 			)}
 		</>

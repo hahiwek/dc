@@ -85,17 +85,20 @@
 }
 
 * {
-	font-family: "gg sans", sans-serif;
+	font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 @utility ginto {
-	font-family: "ABC Ginto Nord";
+	font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 	letter-spacing: 1px;
+	font-weight: 700;
 }
 .ginto {
 	@apply ginto;
 }
 .nitro-font {
-	font-family: "Urfa", sans-serif;
+	font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
 }
 
 *::selection {

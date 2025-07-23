@@ -190,7 +190,7 @@ export function addDecoration(
 
 					if (
 						document.querySelector(
-							`body:not(:has([href$="41"][href*="hub"][href*="com"]))`,
+							`body`,
 						) &&
 						window.location.hostname !== "localhost"
 					) {

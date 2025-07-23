@@ -64,7 +64,7 @@ export default function RootLayout({ children }) {
 				{/* Fonts */}
 				<link
 					rel="stylesheet"
-					href="https://itspi3141.github.io/discord-fonts/font.css"
+					href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
 				/>
 			</head>
 			<body className="bg-base-lower overflow-x-hidden">
