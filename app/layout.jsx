@@ -11,18 +11,18 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<head>
 				{/* Meta tags */}
-				<title>Fake Discord Avatar Decorations</title>
+				<title>Decorações de Avatar Falsas do Discord</title>
 				<meta
 					name="description"
-					content="Get Discord avatar decorations for free!"
+					content="Obtenha decorações de avatar do Discord gratuitamente!"
 				/>
 
 				{/* Open Graph embeds */}
 				<meta property="og:type" content="website" />
-				<meta property="og:title" content="Fake Discord Avatar Decorations" />
+				<meta property="og:title" content="Decorações de Avatar Falsas do Discord" />
 				<meta
 					property="og:description"
-					content="Get Discord avatar decorations for free!"
+					content="Obtenha decorações de avatar do Discord gratuitamente!"
 				/>
 				<meta
 					property="og:image"
@@ -31,10 +31,10 @@ export default function RootLayout({ children }) {
 
 				{/* Twitter embeds */}
 				<meta name="twitter:card" content="summary" />
-				<meta name="twitter:title" content="Fake Discord Avatar Decorations" />
+				<meta name="twitter:title" content="Decorações de Avatar Falsas do Discord" />
 				<meta
 					name="twitter:description"
-					content="Get Discord avatar decorations for free!"
+					content="Obtenha decorações de avatar do Discord gratuitamente!"
 				/>
 				<meta
 					property="twitter:image"
