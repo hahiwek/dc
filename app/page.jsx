@@ -641,11 +641,11 @@ const App = ({ ffmpegRef, isServer }) => {
 				</p>
 			</main>
 			<Modal
-				title={"Save Decorated Avatar"}
+				title={"Salvar Avatar Decorado"}
 				subtitle={
 					isGeneratingAv
-						? "Please wait while the image is being generated."
-						: "You can save the image below. You may need to extract a still frame from the image if you do not have an active Nitro subscription."
+						? "Por favor, aguarde enquanto a imagem está sendo gerada."
+						: "Você pode salvar a imagem abaixo. Talvez seja necessário extrair um quadro estático da imagem se você não tiver uma assinatura Nitro ativa."
 				}
 				visible={downloadModalVisible}
 				onClose={() => {
@@ -655,14 +655,14 @@ const App = ({ ffmpegRef, isServer }) => {
 				{isGeneratingAv ? (
 					<div className="flex flex-col justify-center items-center gap-4 grow">
 						<LoadingCubes />
-						<p>Creating image...</p>
+						<p>Criando imagem...</p>
 					</div>
 				) : generationFailed ? (
 					<div className="flex flex-col justify-center items-center gap-4 grow">
 						<p className="text-red-400 text-center">
-							Failed to generate image
+							Falha ao gerar imagem
 							<br />
-							Please try again.
+							Por favor, tente novamente.
 						</p>
 					</div>
 				) : (
@@ -686,7 +686,7 @@ const App = ({ ffmpegRef, isServer }) => {
 									}}
 								>
 									<Icons.download />
-									Save
+									Salvar
 								</button>
 								<button
 									type="button"
@@ -703,7 +703,7 @@ const App = ({ ffmpegRef, isServer }) => {
 									}}
 								>
 									<Icons.image />
-									Extract still image
+									Extrair imagem estática
 								</button>
 							</div>
 						</div>
@@ -711,9 +711,9 @@ const App = ({ ffmpegRef, isServer }) => {
 				)}
 			</Modal>
 			<Modal
-				title={"File too big"}
+				title={"Arquivo muito grande"}
 				subtitle={
-					"You will need to save the image and upload to the GIF frame extractor manually"
+					"Você precisará salvar a imagem e fazer upload para o extrator de quadros GIF manualmente"
 				}
 				visible={fileTooBig}
 				onClose={() => {
@@ -721,8 +721,8 @@ const App = ({ ffmpegRef, isServer }) => {
 					setFileTooBig(false);
 					router.push("/gif-extractor");
 				}}
-				secondaryText="Cancel"
-				closeText="Proceed"
+				secondaryText="Cancelar"
+				closeText="Prosseguir"
 			>
 				<div className="flex flex-col items-center">
 					<button
@@ -736,7 +736,7 @@ const App = ({ ffmpegRef, isServer }) => {
 						}}
 					>
 						<Icons.download />
-						Save
+						Salvar
 					</button>
 				</div>
 			</Modal>
